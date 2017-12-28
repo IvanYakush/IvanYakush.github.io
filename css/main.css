@@ -15,15 +15,15 @@ header a.act {
   border-bottom: 2px solid #EF9C00;
 }
 .main {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .main .greeting {
-  width: 55%;
+  width: 1000px;
   margin: auto;
   position: relative;
 }
 .main .greeting-img {
-  margin-left: 20%;
+  margin-left: 7%;
 }
 .main .greeting-text {
   width: 50%;
