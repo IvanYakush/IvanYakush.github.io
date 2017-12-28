@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+body {
+  font-family: PlayfairDisplay-Regular;
+  font-size: 20pt;
+}
+header a.nav-link {
+  color: black;
+}
+header a.nav-link:hover {
+  border-bottom: 2px solid #EF9C00;
+}
+header a.act {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  border-bottom: 2px solid #EF9C00;
+}
+.main {
+  margin-top: 10vh;
+}
+.main .greeting {
+  width: 55%;
+  margin: auto;
+  position: relative;
+}
+.main .greeting-img {
+  margin-left: 20%;
+}
+.main .greeting-text {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.main .greeting-text .bold {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 80px;
+}
+.main .greeting-text p {
+  font-family: PlayfairDisplay-BlackItalic;
+  font-size: 16px;
+}
+.main .greeting-text .black {
+  font-family: DroidSerif-BoldItalic;
+}
+.main .greeting-text .yellow {
+  color: #EF9C00;
+}
