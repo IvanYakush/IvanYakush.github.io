@@ -1,25 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 
 body {
-	font-family: PlayfairDisplay-Regular;
-	font-size: 20pt;
+
 }
 
 header {
-	a.nav-link{
-		color: black;
-	}
-	a.nav-link:hover{border-bottom: 2px solid #EF9C00;}
 
-	a.act{
-		font-family: 'Playfair Display';
+	margin:5vh 35px;
+
+	span:hover{
+		border-bottom: 3px solid #BEBEBE;
+	}
+
+	.menu{
+		margin:0px 35px;
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 16px;
+
+		&-active{
+		margin:0px 35px;
+		font-family: 'Playfair Display', serif;
+		border-bottom: 3px solid #EF9C00;
 		font-weight: 900;
-		border-bottom: 2px solid #EF9C00;
+		font-size: 16px;
+		}
+
+
+
+	}
+	.navbar-right{
+		float: right;
 	}
 }
 
 .main {
-	margin-top: 5vh;
+	margin-top: 10%;
 	.greeting{
 		width: 1000px;
 		 margin: auto;
@@ -32,20 +48,22 @@ header {
 		 &-text{
 		 	width: 50%;
 		 	position: absolute;
-		 	top: 30%;
+		 	top: 35%;
 		 	left:50%;
 
+
 		 	.bold{
-		 		font-family: 'Playfair Display';
+		 		line-height:1.0;
+		 		font-family: 'Playfair Display', serif;
 		 		font-weight: 900;
 		 		font-size: 80px;
 		 	}
-		 	p{
-		 		font-family: PlayfairDisplay-BlackItalic;
+		 	.text{
+		 		 font-family: DroidSerif-Regular, serif;
 		 		font-size: 16px;
 		 	}
 		 	.black{
-		 			font-family:DroidSerif-BoldItalic;
+		 		font-family: 'DroidSerif-BoldItalic';
 		 		}
 		 		.yellow{
 		 			color:#EF9C00;

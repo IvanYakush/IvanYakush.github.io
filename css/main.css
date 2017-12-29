@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-body {
-  font-family: PlayfairDisplay-Regular;
-  font-size: 20pt;
+header {
+  margin: 5vh 35px;
 }
-header a.nav-link {
-  color: black;
+header span:hover {
+  border-bottom: 3px solid #BEBEBE;
 }
-header a.nav-link:hover {
-  border-bottom: 2px solid #EF9C00;
+header .menu {
+  margin: 0px 35px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 16px;
 }
-header a.act {
-  font-family: 'Playfair Display';
+header .menu-active {
+  margin: 0px 35px;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 3px solid #EF9C00;
   font-weight: 900;
-  border-bottom: 2px solid #EF9C00;
+  font-size: 16px;
+}
+header .navbar-right {
+  float: right;
 }
 .main {
-  margin-top: 5vh;
+  margin-top: 10%;
 }
 .main .greeting {
   width: 1000px;
@@ -28,20 +34,21 @@ header a.act {
 .main .greeting-text {
   width: 50%;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
 }
 .main .greeting-text .bold {
-  font-family: 'Playfair Display';
+  line-height: 1.0;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 80px;
 }
-.main .greeting-text p {
-  font-family: PlayfairDisplay-BlackItalic;
+.main .greeting-text .text {
+  font-family: DroidSerif-Regular, serif;
   font-size: 16px;
 }
 .main .greeting-text .black {
-  font-family: DroidSerif-BoldItalic;
+  font-family: 'DroidSerif-BoldItalic';
 }
 .main .greeting-text .yellow {
   color: #EF9C00;

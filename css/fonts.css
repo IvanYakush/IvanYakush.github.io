@@ -1,9 +1,12 @@
-@font-face {
-	font-family: "DroidSerif-Regular";
-	src: url(../fonts/DroidSerif-Regular.ttf) format("truetype");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900');
 
-		font-family: "DroidSerif-BoldItalic";
+@font-face {
+	font-family: 'DroidSerif-BoldItalic';
 	src: url(../fonts/DroidSerif-BoldItalic.ttf) format("truetype");
 }
+@font-face {
+	font-family: 'DroidSerif-Regular';
+	src: url(../fonts/DroidSerif-Regular.ttf) format("truetype");
+}
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+

@@ -33,3 +33,13 @@
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .main {
+    margin-top: 7%;
+  }
+}
+@media only screen and (min-width: 1960px) {
+  .main {
+    margin-top: 15%;
+  }
+}
