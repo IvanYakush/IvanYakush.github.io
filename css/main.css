@@ -1,7 +1,13 @@
+a {
+  cursor: pointer;
+}
 header {
   margin: 5vh 35px;
 }
-header span:hover {
+header a {
+  text-decoration: none;
+}
+header a:hover {
   border-bottom: 3px solid #BEBEBE;
 }
 header .menu {
@@ -16,6 +22,9 @@ header .menu-active {
   border-bottom: 3px solid #EF9C00;
   font-weight: 900;
   font-size: 16px;
+}
+header .menu-active:hover {
+  border-bottom: 3px solid #EF9C00;
 }
 header .navbar-right {
   float: right;
@@ -52,4 +61,80 @@ header .navbar-right {
 }
 .main .greeting-text .yellow {
   color: #EF9C00;
+}
+.main .greeting-text .yellow:hover {
+  color: rgba(26, 255, 209, 0.2);
+}
+aside {
+  position: relative;
+}
+aside .description {
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  top: 10vh;
+  left: 5%;
+}
+aside .description .name {
+  font-family: 'Playfair Display', serif;
+  color: #EF9C00;
+  font-weight: 900;
+  font-size: 35px;
+}
+aside .description .type {
+  margin-top: 7vh;
+  font-family: 'Playfair Display', serif;
+  color: ##BEBEBE;
+  font-size: 25px;
+}
+aside .description .title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+aside .description .details {
+  font-family: DroidSerif-Regular, serif;
+  font-size: 16px;
+}
+aside .description .feedback q {
+  font-family: 'DroidSerif-Italic';
+  font-size: 18px;
+}
+aside .description .cite {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  float: right;
+}
+aside .bg {
+  position: absolute;
+  top: 0;
+  filter: blur(50px);
+  z-index: 99;
+  height: 100vh;
+  width: 514px;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.gradient-up {
+  position: absolute;
+  height: 30vh;
+  width: 60%;
+  float: right;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+}
+.main-img {
+  margin: 0 5%;
+  height: 100vh;
+  width: 60%;
+  float: right;
+  overflow: auto;
+}
+.main-img::-webkit-scrollbar {
+  width: 0;
+}
+.main-img img {
+  width: 100%;
+  overflow: auto;
 }
