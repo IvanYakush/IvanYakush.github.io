@@ -9,4 +9,9 @@
 	src: url(../fonts/DroidSerif-Regular.ttf) format("truetype");
 }
 
+@font-face {
+	font-family: 'DroidSerif-Italic';
+	src: url(../fonts/DroidSerif-Italic.ttf) format("truetype");
+}
+
 

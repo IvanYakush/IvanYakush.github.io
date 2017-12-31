@@ -1,11 +1,10 @@
-a {
-  cursor: pointer;
-}
 header {
   margin: 5vh 35px;
 }
 header a {
-  text-decoration: none;
+  cursor: pointer;
+  color: #000 !important;
+  text-decoration: none !important;
 }
 header a:hover {
   border-bottom: 3px solid #BEBEBE;
@@ -60,6 +59,7 @@ header .navbar-right {
   font-family: 'DroidSerif-BoldItalic';
 }
 .main .greeting-text .yellow {
+  text-decoration: none !important;
   color: #EF9C00;
 }
 .main .greeting-text .yellow:hover {
@@ -69,6 +69,7 @@ aside {
   position: relative;
 }
 aside .description {
+  height: 70vh;
   position: absolute;
   z-index: 100;
   width: 300px;
@@ -76,15 +77,17 @@ aside .description {
   left: 5%;
 }
 aside .description .name {
+  margin-left: -35px;
   font-family: 'Playfair Display', serif;
-  color: #EF9C00;
   font-weight: 900;
+  color: #EF9C00;
   font-size: 35px;
 }
 aside .description .type {
   margin-top: 7vh;
   font-family: 'Playfair Display', serif;
-  color: ##BEBEBE;
+  font-style: italic;
+  color: #BEBEBE;
   font-size: 25px;
 }
 aside .description .title {
@@ -96,15 +99,35 @@ aside .description .details {
   font-family: DroidSerif-Regular, serif;
   font-size: 16px;
 }
-aside .description .feedback q {
+aside .description .feedback {
   font-family: 'DroidSerif-Italic';
   font-size: 18px;
 }
 aside .description .cite {
-  text-decoration: none;
   font-family: 'Playfair Display', serif;
+  font-weight: 900;
   font-size: 20px;
   float: right;
+}
+aside .description .navigate {
+  position: absolute;
+  bottom: -20%;
+}
+aside .description .navigate span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+}
+aside .description .navigate a {
+  margin: 0 9px;
+}
+aside .gradient-left {
+  z-index: 100;
+  position: absolute;
+  left: 20%;
+  height: 100vh;
+  width: 15%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
 }
 aside .bg {
   position: absolute;
@@ -112,17 +135,21 @@ aside .bg {
   filter: blur(50px);
   z-index: 99;
   height: 100vh;
-  width: 514px;
+  width: 27%;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center;
 }
-.gradient-up {
+.gradient {
   position: absolute;
-  height: 30vh;
+  height: 20vh;
   width: 60%;
   float: right;
   background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+}
+.bottom {
+  top: 80%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
 }
 .main-img {
   margin: 0 5%;

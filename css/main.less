@@ -3,16 +3,15 @@
 body {
 
 }
+	
+header {
 	a{
 		cursor: pointer;
-		
-	}
-header {
+		color: #000 !important;
+		text-decoration: none !important;
+		}
 
 	margin:5vh 35px;
-	a{
-		text-decoration: none;
-	}
 
 	a:hover{
 		border-bottom: 3px solid #BEBEBE;
@@ -73,6 +72,7 @@ header {
 		 		font-family: 'DroidSerif-BoldItalic';
 		 		}
 		 		.yellow{
+		 			text-decoration: none !important;
 		 			color:#EF9C00;
 		 			&:hover{
 		 				color: rgba(26,255,209,0.2);
@@ -85,6 +85,7 @@ header {
 aside{
 	position: relative;
 	.description{
+		height: 70vh;
 		position: absolute;
 		z-index:100;
 		width: 300px;
@@ -94,16 +95,24 @@ aside{
 
 		.name{
 
+			img{
+				// position:absolute;
+				// top:3%;
+				// left:-12%;
+			}
+
+		margin-left:-35px;
 		font-family: 'Playfair Display', serif;
-		color: #EF9C00;
 		font-weight: 900;
+		color: #EF9C00;
 		font-size: 35px;
 		}
 
 		.type{
 		margin-top: 7vh;
 		font-family: 'Playfair Display', serif;
-		color: ##BEBEBE;
+		font-style: italic;
+		color: #BEBEBE;
 		font-size: 25px;
 		}
 
@@ -118,21 +127,45 @@ aside{
 		 	font-size: 16px;
 		}
 
-		.feedback q{
+		.feedback {
 			font-family: 'DroidSerif-Italic';
 			font-size: 18px;
-
 		}
 
 		.cite{
-			text-decoration: none;
-		 font-family: 'Playfair Display', serif;
+		font-family: 'Playfair Display', serif;
+		font-weight: 900;
 		font-size: 20px;
 		float: right;
+	}
+		
+		.navigate{
+			position:absolute;
+			bottom:-20%;
 
+			span{
+		font-family: 'Playfair Display', serif;
+		font-style: italic;
+		font-size: 18px;
 			}
 
+			a{
+				margin:0 9px;
+			}
+		}
+		
 
+
+	}
+
+	.gradient-left{
+		z-index:100;
+	position: absolute;
+	left:20%;
+	height: 100vh;
+	width: 15%;
+	
+	background: linear-gradient(to right, rgba( 255, 255, 255, 0.0), #fff);
 	}
 	.bg{
 		position: absolute;
@@ -140,20 +173,27 @@ aside{
 		filter: blur(50px);
 		z-index:99;
 		height: 100vh;
-	width: 514px;
+	width: 27%;
 	background-image: url(../img/bg.png);
 	background-size: cover;
 	background-position: center;
 	}
 	
 }
-.gradient-up{
+.gradient{
 	position: absolute;
-	height: 30vh;
+	height: 20vh;
 	width: 60%;
 	float: right;
 	background: linear-gradient(to top, rgba( 255, 255, 255, 0.0), #fff);
 	}
+
+	.bottom{
+		top: 80%;
+		background: linear-gradient(to bottom, rgba( 255, 255, 255, 0.0), #fff);
+	}
+
+	
 
 .main-img {
 	margin: 0 5%;
