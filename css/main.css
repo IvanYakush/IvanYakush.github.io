@@ -1,1 +1,231 @@
-header{margin:0 35px}header .menu-left{padding:0;margin:0;display:flex}header .menu-left li:first-child a{font-weight:900}header .menu-left li:first-child a::after{background-color:#EF9C00;transform:translateY(-2px) scale(1)}header .menu-right{display:flex}header li{margin:7vh 35px;list-style:none;color:#000}header li a{text-decoration:none!important;color:#000!important;transition:all .1s;font-family:'Playfair Display',serif;font-weight:400;font-size:16px}header li a::after{content:'';display:block;width:100%;height:3px;background-color:#BEBEBE;transition:all .3s;transform:translateY(-2px) scale(0)}header li a:hover::after{transform:translateY(-2px) scale(1)}.main .greeting{width:1000px;margin:auto;position:relative}.main .greeting-img{margin-left:7%}.main .greeting-text{width:50%;position:absolute;top:35%;left:50%}.main .greeting-text .bold{line-height:1;font-family:'Playfair Display',serif;font-weight:900;font-size:80px}.main .greeting-text .text{font-family:DroidSerif-Regular,serif;font-size:16px}.main .greeting-text .black{font-family:DroidSerif-BoldItalic}.main .greeting-text .yellow{text-decoration:none!important;color:#EF9C00;transition:all .3s}.main .greeting-text .yellow:hover{color:rgba(26,255,209,.2)}aside{position:relative}aside .description{height:70vh;position:absolute;z-index:100;width:300px;top:10vh;left:5%}aside .description .name{margin-left:-35px;font-family:'Playfair Display',serif;font-weight:900;color:#EF9C00;font-size:35px}aside .description .type{margin-top:7vh;font-family:'Playfair Display',serif;font-style:italic;color:#BEBEBE;font-size:25px}aside .description .title{font-family:'Playfair Display',serif;font-weight:900;font-size:25px}aside .description .details{font-family:DroidSerif-Regular,serif;font-size:16px}aside .description .feedback{font-family:DroidSerif-Italic;font-size:18px}aside .description .cite{font-family:'Playfair Display',serif;font-weight:900;font-size:20px;float:right}aside .description .navigate{position:absolute;bottom:-20%}aside .description .navigate span{font-family:'Playfair Display',serif;font-style:italic;font-size:18px}aside .description .navigate a{margin:0 9px}aside .gradient-left{z-index:100;position:absolute;left:20%;height:100vh;width:15%;background:linear-gradient(to right,rgba(255,255,255,0),#fff)}aside .bg{position:absolute;top:0;filter:blur(50px);z-index:99;height:100vh;width:27%;background-image:url(../img/bg.png);background-size:cover;background-position:center}.gradient{position:absolute;height:20vh;width:60%;float:right;background:linear-gradient(to top,rgba(255,255,255,0),#fff)}.bottom{top:80%;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff)}.main-img{margin:0 5%;height:100vh;width:60%;float:right;overflow:auto}.main-img::-webkit-scrollbar{width:0}.main-img img{width:100%;overflow:auto}
+header .row {
+  margin: 0;
+}
+header .menu-left {
+  padding: 0px;
+  margin-left: 62px;
+  display: flex;
+}
+header .menu-left li:first-child a {
+  font-weight: 900;
+}
+header .menu-left li:first-child a::after {
+  background-color: #EF9C00;
+  transform: translateY(-2px) scale(1);
+}
+header .menu-left-description {
+  display: flex;
+  position: absolute;
+  left: 2%;
+}
+header .menu-right {
+  display: flex;
+  margin-right: 59px;
+}
+header li {
+  margin: 5vh 35px;
+  list-style: none;
+  color: #000;
+}
+header li a {
+  text-decoration: none !important;
+  color: #000 !important;
+  transition: all 0.1s;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+header li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #BEBEBE;
+  transition: all 0.3s;
+  transform: translateY(-2px) scale(0);
+}
+header li a:hover::after {
+  transform: translateY(-2px) scale(1);
+}
+.main .greeting {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+.main .greeting-img {
+  margin-left: 7%;
+}
+.main .greeting-text {
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+.main .greeting-text .bold {
+  line-height: 1.0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 80px;
+}
+.main .greeting-text .text {
+  font-family: DroidSerif-Regular, serif;
+  font-size: 16px;
+}
+.main .greeting-text .black {
+  font-family: 'DroidSerif-BoldItalic';
+}
+.main .greeting-text .yellow {
+  text-decoration: none !important;
+  color: #EF9C00;
+  transition: all 0.3s;
+}
+.main .greeting-text .yellow:hover {
+  color: rgba(26, 255, 209, 0.2);
+}
+/*PREVIEV IMAGE*/
+/*DESCRIPTION*/
+aside {
+  position: relative;
+}
+aside .description {
+  height: 70vh;
+  position: absolute;
+  z-index: 2;
+  width: 300px;
+  top: 10vh;
+  left: 6%;
+}
+aside .description .type {
+  margin-top: 20vh;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #BEBEBE;
+  font-size: 25px;
+}
+aside .description .title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 25px;
+}
+aside .description .minecraft-title {
+  color: #EF0808;
+}
+aside .description .importance-t {
+  color: #048F3A;
+}
+aside .description .social-t {
+  color: #FF7813;
+}
+aside .description .pro-traveler-t {
+  color: #9E2A2F;
+}
+aside .description .details {
+  font-family: DroidSerif-Regular, serif;
+  font-size: 16px;
+}
+aside .description .feedback {
+  width: 100%;
+  font-family: 'DroidSerif-Italic';
+  font-size: 18px;
+  background-image: url(../img/Path.png);
+  background-size: 60%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: visible;
+}
+aside .description .cite {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 20px;
+  float: right;
+}
+aside .description .navigate {
+  position: absolute;
+  bottom: -20%;
+}
+aside .description .navigate span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+}
+aside .description .navigate a {
+  margin: 0 9px;
+}
+/*IMAGE*/
+.border-left {
+  z-index: 100;
+  position: absolute;
+  background: #EAEAEA;
+  left: 27%;
+  height: 100vh;
+  width: 1px;
+}
+.border-bottom {
+  position: absolute;
+  background: #EAEAEA;
+  top: 135px;
+  height: 1px;
+  width: 27%;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  /*filter: blur(50px);*/
+  height: 100vh;
+  width: 27%;
+  background-size: cover;
+  background-position: center;
+}
+.minecraft {
+  background-image: url(..//img/minecraftBlur.png);
+}
+.importance {
+  background-image: url(..//img/importance-of-packagingBlur.png);
+}
+.social {
+  background-image: url(..//img/SocialMediaMobileandTravelbg.png);
+}
+.pro-traveler {
+  background-image: url(..//img/pro-travelerBlur.png);
+}
+.img-illustration {
+  width: 100%;
+  margin: auto;
+  margin-top: 50%;
+}
+.gradient {
+  position: absolute;
+  height: 20vh;
+  width: 45%;
+  float: right;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+  transition: all 0.6s;
+}
+.gradient:hover {
+  opacity: 0.0;
+}
+.bottom {
+  top: 80%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+}
+.main-img {
+  margin: 0 21%;
+  height: 100vh;
+  width: 32%;
+  float: right;
+  overflow: auto;
+}
+.main-img::-webkit-scrollbar {
+  width: 0;
+}
+.main-img img {
+  width: 100%;
+  overflow: auto;
+}
+.btn-img {
+  height: 120px;
+  width: 60px;
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+}

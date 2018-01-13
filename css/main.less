@@ -5,11 +5,12 @@ body {
 }
 	
 header {
-	margin:0 35px;
-
+	.row{
+		margin:0;
+	}
 	.menu-left{
 		padding: 0px;
-		margin:0px;
+		margin-left:62px;
 		display:flex;
 		li:first-child{
 			a{
@@ -20,12 +21,18 @@ header {
 			}
 			}
 	}
+	&-description{
+		display: flex;
+		position: absolute;
+		left: 2%;
+	}
 }
 	.menu-right{
 		display:flex;
+		margin-right:59px;
 	}
 	li{
-		margin:7vh 35px;
+		margin:5vh 35px;
 		list-style: none;
 		color: #000;
 		a{
@@ -98,34 +105,23 @@ header {
 
 	}
 }
+/*PREVIEV IMAGE*/
+
+/*DESCRIPTION*/
+
 aside{
 	position: relative;
 	.description{
 		height: 70vh;
 		position: absolute;
-		z-index:100;
+		z-index:2;
 		width: 300px;
 		top:10vh;
-		left:5%;
+		left:6%;
 
-
-		.name{
-
-			img{
-				// position:absolute;
-				// top:3%;
-				// left:-12%;
-			}
-
-		margin-left:-35px;
-		font-family: 'Playfair Display', serif;
-		font-weight: 900;
-		color: #EF9C00;
-		font-size: 35px;
-		}
 
 		.type{
-		margin-top: 7vh;
+		margin-top: 20vh;
 		font-family: 'Playfair Display', serif;
 		font-style: italic;
 		color: #BEBEBE;
@@ -137,6 +133,20 @@ aside{
 		font-weight: 900;
 		font-size: 25px;
 		}
+		.minecraft-title
+		{
+			color: #EF0808;
+		}
+		.importance-t
+		{
+			color: #048F3A;
+		}
+		.social-t{
+			color:#FF7813;
+		}
+		.pro-traveler-t{
+			color:#9E2A2F;
+		}
 
 		.details{
 			font-family: DroidSerif-Regular, serif;
@@ -144,8 +154,14 @@ aside{
 		}
 
 		.feedback {
+			width: 100%;
 			font-family: 'DroidSerif-Italic';
 			font-size: 18px;
+			background-image: url(../img/Path.png);
+			background-size: 60%;
+			background-position: 100% 100%;
+			background-repeat: no-repeat;
+			overflow: visible;
 		}
 
 		.cite{
@@ -169,52 +185,85 @@ aside{
 				margin:0 9px;
 			}
 		}
-		
-
-
 	}
-
-	.gradient-left{
-		z-index:100;
+}
+/*IMAGE*/
+ 
+	.border-left{
+	z-index: 100;
+	 position: absolute;
+	 background: #EAEAEA;
+	 left:27%;
+	 height: 100vh;
+	 width: 1px;
+	}
+	.border-bottom{
 	position: absolute;
-	left:20%;
-	height: 100vh;
-	width: 15%;
-	
-	background: linear-gradient(to right, rgba( 255, 255, 255, 0.0), #fff);
-	}
-	.bg{
-		position: absolute;
-		top:0;
-		filter: blur(50px);
-		z-index:99;
-		height: 100vh;
+	background: #EAEAEA;
+	top:135px;
+	height: 1px;
 	width: 27%;
-	background-image: url(../img/bg.png);
+	}
+
+
+	.bg{
+	position: absolute;
+	top:0;
+	/*filter: blur(50px);*/
+	height: 100vh;
+	width: 27%;
 	background-size: cover;
 	background-position: center;
 	}
+	.minecraft{
+		background-image: url(..//img/minecraftBlur.png);
+	}
+	.importance{
+		background-image: url(..//img/importance-of-packagingBlur.png);
+	}
+	.social{
+		background-image: url(..//img/SocialMediaMobileandTravelbg.png);
+	}
+	.pro-traveler{
+		background-image: url(..//img/pro-travelerBlur.png);
+	}
 	
+
+
+.img{
+	&-illustration{
+		width: 100%;
+		margin: auto;
+		margin-top: 50%;
+	}
 }
+
 .gradient{
 	position: absolute;
 	height: 20vh;
-	width: 60%;
+	width: 45%;
 	float: right;
-	background: linear-gradient(to top, rgba( 255, 255, 255, 0.0), #fff);
+	background:linear-gradient(to top, rgba( 255, 255, 255, 0.0), #fff);
+	transition: all 0.6s;
+	&:hover{
+		opacity: 0.0;
 	}
+}
 
+	
 	.bottom{
 		top: 80%;
 		background: linear-gradient(to bottom, rgba( 255, 255, 255, 0.0), #fff);
+		&:hover{
+	}
 	}
 
 	
 
 .main-img {
-	margin: 0 5%;
+	margin: 0 21%;
 	height: 100vh;
-	width: 60%;
+	width: 32%;
 	float: right;
 	overflow: auto;
 	&::-webkit-scrollbar { width: 0; }
@@ -225,4 +274,12 @@ aside{
  	width: 100%;
  	overflow: auto;
  }
+}
+
+.btn-img{
+	height: 120px;
+	width: 60px;
+	position: absolute;
+	bottom: 10%;
+	right:3%;
 }
